@@ -1,8 +1,6 @@
 /*-------- Basic --------*/
 
 .main {
-    display: flex;
-    align-items: center;
     height: 100vh;
     width: 100%;
     position: relative;
@@ -225,5 +223,13 @@
         left: 50%;
         width: 50.6%;
         transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 1056px) {
+
+    .main {
+        display: flex;
+        align-items: center;
     }
 }
