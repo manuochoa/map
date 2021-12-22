@@ -1,0 +1,224 @@
+/*-------- Basic --------*/
+
+.main {
+    background-image: url(../../images/map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(12px);
+}
+
+.map {
+    position: relative;
+    background-image: url(../../images/map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    overflow: hidden;
+
+    &:before {
+        content: "";
+        display: block;
+        width: 100%;
+        padding-top: 56%;
+    }
+}
+
+.link {
+    position: absolute;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    transition: transform 0.3s cubic-bezier(0.2, 0, 0.175, 1);
+    // z-index: 1;
+
+    &__title {
+        position: absolute;
+    }
+
+    &:before {
+        content: '';
+        display: block;
+        width: 100%;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.link {
+
+    &--connectWallet {
+        width: 18%;
+        height: auto;
+
+        top: 8%;
+        left: 42.5%;
+
+        background-image: url(../../images/titles/connectWallet/connectWalletBg.png);
+    }
+
+    &--connectWallet:before {
+        padding-top: 26%;
+    }
+
+    &--connectWallet &__title {
+        width: 60%;
+
+        left: 50%;
+        top: 15%;
+
+        transform: translateX(-50%);
+    }
+}
+
+.link {
+
+    &--main {
+        width: 25%;
+        top: 2%;
+        left: 3%;
+        background-image: url(../../images/titles/mainLogo/mainLogoBg.png);
+        z-index: 1;
+    }
+
+    &--main:before {
+        padding-top: 46%;
+    }
+
+    &--main &__title {
+        top: 20%;
+        left: 9%;
+        width: 78%;
+    }
+}
+
+.link {
+
+    &--farm {
+        width: 13%;
+        top: 3.1%;
+        right: 9.8%;
+        background-image: url(../../images/titles/farm/farmBg.png);
+    }
+
+    &--farm:before {
+        padding-top: 28%;
+    }
+
+    &--farm &__title {
+        top: 11%;
+        left: 50%;
+        width: 30%;
+        transform: translateX(-50%);
+    }
+}
+
+.link {
+
+    &--dungeon {
+        width: 12.9%;
+        top: 3.1%;
+        left: 5.7%;
+        top: 45%;
+        background-image: url(../../images/titles/dungeon/dungeonBg.png);
+    }
+
+    &--dungeon:before {
+        padding-top: 26.5%;
+    }
+
+    &--dungeon &__title {
+        top: 19%;
+        left: 50%;
+        width: 63%;
+        transform: translateX(-50%);
+    }
+}
+
+.link {
+
+    &--staking {
+        width: 12.7%;
+        left: 27.1%;
+        top: 33.8%;
+        background-image: url(../../images/titles/staking/stakingBg.png);
+    }
+
+    &--staking:before {
+        padding-top: 28.6%;
+    }
+
+    &--staking &__title {
+        top: 15%;
+        left: 50%;
+        width: 37%;
+        transform: translateX(-50%);
+    }
+}
+
+.link {
+
+    &--market {
+        width: 12.7%;
+        right: 12.5%;
+        top: 48.9%;
+        background-image: url(../../images/titles/market/marketBg.png);
+    }
+
+    &--market:before {
+        padding-top: 28.6%;
+    }
+
+    &--market &__title {
+        top: 15%;
+        left: 50%;
+        width: 37%;
+        transform: translateX(-50%);
+    }
+}
+
+.link {
+
+    &--portal {
+        width: 12.9%;
+        left: 21.8%;
+        top: 67.7%;
+        background-image: url(../../images/titles/portal/portalBg.png);
+    }
+
+    &--portal:before {
+        padding-top: 38.6%;
+    }
+
+    &--portal &__title {
+        top: 11%;
+        left: 50%;
+        width: 44.41%;
+        transform: translateX(-50%);
+    }
+}
+
+.link {
+
+    &--wennieWar {
+        width: 12.9%;
+        left: 38.95%;
+        top: 60.4%;
+        background-image: url(../../images/titles/wennieWar/wennieWarBg.png);
+    }
+
+    &--wennieWar:before {
+        padding-top: 26.1%;
+    }
+
+    &--wennieWar &__title {
+        top: 18%;
+        left: 50%;
+        width: 50.6%;
+        transform: translateX(-50%);
+    }
+}

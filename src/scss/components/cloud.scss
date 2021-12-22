@@ -1,0 +1,152 @@
+/*-------- Cloud --------*/
+
+.cloud {
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+
+    &--1 {
+        width: 26%;
+        top: 0;
+        left: 0;
+
+        animation: cloud1;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-duration: 15s;
+        animation-timing-function: cubic-bezier(0, 0, 0, 0);
+    }
+
+    &--2 {
+        width: 32.5%;
+        bottom: 0;
+        left: 0;
+
+        animation: cloud2;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-duration: 15s;
+        animation-timing-function: cubic-bezier(0, 0, 0, 0);
+    }
+
+    &--3 {
+        width: 10.5%;
+        top: 0;
+        right: 0;
+        
+        animation: cloud3;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-duration: 15s;
+        animation-timing-function: cubic-bezier(0, 0, 0, 0);
+    }
+
+    &--4 {
+        width: 21.3%;
+        right: 0;
+        top: 35%;
+
+        animation: cloud4;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-duration: 15s;
+        animation-timing-function: cubic-bezier(0, 0, 0, 0);
+    }
+
+    &--5 {
+        width: 9.1%;
+        right: 0;
+        bottom: 0;
+
+        animation: cloud5;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-duration: 15s;
+        animation-timing-function: cubic-bezier(0, 0, 0, 0);
+    }
+
+    &--6 {
+        width: 20.3%;
+        bottom: 0;
+        right: 32%;
+
+        animation: cloud6;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-duration: 15s;
+        animation-timing-function: cubic-bezier(0, 0, 0, 0);
+    }
+
+    &--7 {
+        z-index: 10;
+        right: 0;
+        top: 20%;
+        mix-blend-mode: screen;
+    }
+}
+
+@keyframes cloud1 {
+    
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(20%);
+    }
+}
+
+@keyframes cloud2 {
+    
+    0% {
+        transform: translate(0, 10%);
+    }
+
+    100% {
+        transform: translate(-30%, 0);
+    }
+}
+
+@keyframes cloud3 {
+    
+    0% {
+        transform: translate(20%, -20%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes cloud4 {
+    
+    0% {
+        transform: translate(20%, -40%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes cloud5 {
+    
+    0% {
+        transform: translate(20%, 20%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes cloud6 {
+    
+    0% {
+        transform: translate(30%, 10%);
+    }
+
+    100% {
+        transform: translate(-10%, 0);
+    }
+}
