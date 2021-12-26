@@ -13,7 +13,7 @@ import Clouds from './components/Clouds';
 import ConnectPopup from './components/ConnectPopup';
 
 function App() {
-    const [popupShowed, setPopupShowed] = useState(true);
+    const [popupShowed, setPopupShowed] = useState(false);
 
     return (
         <div className="main">
