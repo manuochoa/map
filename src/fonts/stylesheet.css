@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Ancient';
+    src: url('subset-Ancient-Medium.woff2') format('woff2'),
+        url('subset-Ancient-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir LT Std';
+    src: url('subset-AvenirLTStd-Roman.woff2') format('woff2'),
+        url('subset-AvenirLTStd-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Avenir LT Std Bold';
+    src: url('subset-AvenirLTStd-Book.woff2') format('woff2'),
+        url('subset-AvenirLTStd-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
