@@ -11,6 +11,7 @@ import portal from './images/titles/portal/portal.png';
 import wennieWar from './images/titles/wennieWar/wennieWar.png';
 import Clouds from './components/Clouds';
 import ConnectPopup from './components/ConnectPopup';
+import Social from './components/Social';
 
 function App() {
     const [popupShowed, setPopupShowed] = useState(false);
@@ -45,6 +46,7 @@ function App() {
                 <Clouds />
             </div>
             <ConnectPopup popupShowed={popupShowed} setPopupShowed={setPopupShowed} className="popup--connect" />
+            <Social />
         </div>
     );
 }
