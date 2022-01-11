@@ -25,12 +25,12 @@ function App() {
                 <Link to="/" className="link link--main">
                     <img src={mainLogo} alt="wennie land" className="link__title" aria-label='wennie land"' />
                 </Link>
-                <button className="link link--connectWallet" onClick={() => setPopupShowed(!popupShowed)}>
-                    <img src={connectWallet} alt="connect wallet" className="link__title" aria-label='connect wallet' />
-                </button>
                 <a href="https://pancakeswap.finance/swap?outputCurrency=0x9edccffbfa09be9ae65bfb1352965ba184ab4c09" className="link link--buy" target="_blank" rel="noreferrer">
                     <img src={buyWeLand} alt="buy weland" className="link__title" aria-label='buy weland' />
                 </a>
+                <button className="link link--connectWallet" onClick={() => setPopupShowed(!popupShowed)}>
+                    <img src={connectWallet} alt="connect wallet" className="link__title" aria-label='connect wallet' />
+                </button>
                 <Link to="/" className="link link--farm">
                     <img src={farm} alt="farm" className="link__title" aria-label="farm" />
                 </Link>
