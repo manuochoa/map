@@ -118,6 +118,188 @@
     }
 }
 
+.popup {
+
+    &--market &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        max-width: 1228px;
+        height: 692px;
+        padding: 0 235px;
+
+        background-image: url(../../images/marketBg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        position: relative;
+    }
+
+    &--market &__title {
+        font-size: 60px;
+    }
+
+    &--market &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+
+    &__list-wrapper {
+        margin-bottom: -10px;
+        margin-top: 40px;
+    }
+
+    &--market &__item {
+        width: calc(20% - 10px);
+        margin-bottom: 10px;
+        transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    &--market &__item-link:after {
+        content: '';
+
+        width: 102px;
+        height: 40px;
+
+        position: absolute;
+        top: 84%;
+
+        background: #AD2518;
+        filter: blur(20px);
+        border-radius: 100px;
+
+        pointer-events: none;
+        opacity: 0;
+        visibility: hidden;
+
+        transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    &--market &__item:not(:first-child) {
+        margin-top: 0;
+    }
+
+    &--market &__item:hover {
+        transform: translateY(-5%);
+    }
+
+    &--market &__item:hover &__item-link:after {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &--market &__item-link {
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+        position: relative;
+        filter: drop-shadow(0px 4px 18px rgba(86, 91, 118, 0.25));
+        border-radius: 16px;
+    }
+
+    &--market &__item-image {
+        display: block;
+        width: 100%;
+        z-index: 2;
+    }
+
+    &--market &__remove {
+        position: absolute;
+        top: 24%;
+        right: 19%;
+    }
+}
+
+@media (max-width: 1219px) {
+
+    .popup {
+
+        &--market &__wrapper {
+            height: 598px;
+            padding: 0 190px;
+        }
+    }
+}
+
+@media (max-width: 1099px) {
+
+    .popup {
+
+        &--market &__wrapper {
+            height: 418px;
+            padding: 0 142px;
+            max-width: 760px;
+        }
+
+        &--market &__title {
+            font-size: 50px;
+        }
+
+        &--market &__remove {
+            top: 22%;
+        }
+
+        &--market &__list-wrapper {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    .popup {
+
+        &--market &__wrapper {
+            height: 255px;
+            max-width: 450px;
+            padding: 0 76px;
+        }
+
+        &--market &__list {
+            flex-wrap: nowrap;
+        }
+
+        &--market &__item {
+            flex-shrink: 0;
+            width: 80px;
+            margin-bottom: 0;
+        }
+
+        &--market &__item:not(:first-child) {
+            margin-left: 10px;
+        }
+
+        &--market &__list-wrapper {
+            overflow: auto;
+            max-width: 100%; 
+            padding: 10px;
+        }
+
+        &--market &__title {
+            font-size: 26px;
+        }
+
+        &--market &__remove {
+            width: 28px;
+            height: 28px;
+        }
+
+        &--market &__item-link {
+            filter: drop-shadow(0px 2px 8px rgba(86, 91, 118, 0.25));
+        }
+
+        &--market &__item-link:after {
+            content: none;
+        }
+    }
+}
+
 @media (max-width: 619px) {
 
     .popup {
@@ -185,6 +367,31 @@
 
         &--connect &__text--link {
             margin-top: 7px;
+        }
+    }
+
+    .popup {
+
+        &--market &__wrapper {
+            height: 175px;
+            max-width: 310px;
+            padding: 0 55px;
+        }
+
+        &--market &__item {
+            width: 65px;
+        }
+
+        &--market &__item:not(:first-child) {
+            margin-left: 5px;
+        }
+
+        &--market &__list-wrapper {
+            margin-top: 5px;
+        }
+
+        &--market &__remove {
+            top: 19%;
         }
     }
 }

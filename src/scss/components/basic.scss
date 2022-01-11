@@ -103,6 +103,29 @@ body {
 }
 
 .link {
+
+    &--buy {
+        width: 19%;
+        height: auto;
+        top: 15%;
+        left: 42.5%;
+
+        background-image: url(../../images/titles/connectWallet/connectWalletBg.png);
+    }
+
+    &--buy:before {
+        padding-top: 30%;
+    }
+
+    &--buy &__title {
+        width: 57%;
+        top: 19%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.link {
     &--main {
         width: 25%;
         top: 2%;
