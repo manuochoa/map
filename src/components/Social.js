@@ -13,27 +13,27 @@ export default function Social() {
                 <img src={resources} alt="resources" className="social__title" />
                 <ul className="social__list">
                     <li className="social__item">
-                        <a href="/" className="social__link">
+                        <a href="https://t.me/WeenieLand" className="social__link" target="_blank" rel="noreferrer">
                             <Telegram className="social__icon" />
                         </a>
                     </li>
                     <li className="social__item">
-                        <a href="/" className="social__link">
-                            <Instagram className="social__icon" />
-                        </a>
-                    </li>
-                    <li className="social__item">
-                        <a href="/" className="social__link">
+                        <a href="https://mobile.twitter.com/weenie__land" className="social__link" target="_blank" rel="noreferrer">
                             <Twitter className="social__icon" />
                         </a>
                     </li>
                     <li className="social__item">
-                        <a href="/" className="social__link">
+                        <a href="/" className="social__link" target="_blank" rel="noreferrer">
+                            <Instagram className="social__icon" />
+                        </a>
+                    </li>
+                    <li className="social__item">
+                        <a href="/" className="social__link" target="_blank" rel="noreferrer">
                             <MSocial className="social__icon" />
                         </a>
                     </li>
                     <li className="social__item">
-                        <a href="/" className="social__link">
+                        <a href="https://bscscan.com/token/0x9edccffbfa09be9ae65bfb1352965ba184ab4c09" className="social__link" target="_blank" rel="noreferrer">
                             <BSC className="social__icon" />
                         </a>
                     </li>

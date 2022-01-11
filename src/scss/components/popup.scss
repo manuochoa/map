@@ -163,15 +163,16 @@
     &--market &__item-link:after {
         content: '';
 
-        width: 102px;
-        height: 40px;
+        width: 115px;
+        height: 63px;
 
         position: absolute;
-        top: 84%;
+        top: 77%;
 
-        background: #AD2518;
-        filter: blur(20px);
-        border-radius: 100px;
+        background-image: url(../../images/shadow.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
 
         pointer-events: none;
         opacity: 0;
@@ -199,8 +200,9 @@
 
         width: 100%;
         position: relative;
-        filter: drop-shadow(0px 4px 18px rgba(86, 91, 118, 0.25));
-        border-radius: 16px;
+        // filter: drop-shadow(0px 4px 18px rgba(86, 91, 118, 0.25));
+        box-shadow: 0 0 18px 5px rgba(86, 91, 118, 0.23);
+        border-radius: 23px;
     }
 
     &--market &__item-image {
@@ -291,7 +293,8 @@
         }
 
         &--market &__item-link {
-            filter: drop-shadow(0px 2px 8px rgba(86, 91, 118, 0.25));
+            // filter: drop-shadow(0px 2px 8px rgba(86, 91, 118, 0.25));
+            box-shadow: 0 0 5px 6px rgba(86, 91, 118, 0.23);
         }
 
         &--market &__item-link:after {
