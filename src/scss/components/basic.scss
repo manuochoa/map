@@ -225,6 +225,32 @@ body {
     }
 }
 
+@supports (-webkit-touch-callout: none) {
+    
+    .link {
+
+        &--connectWallet {
+            width: 18.6%;
+            left: 42.5%;
+        }
+
+        &--connectWallet &__title {
+            width: 50%;
+        }
+    }
+
+    .link {
+
+        &--market {
+            width: 15%;
+        }
+    
+        &--market &__title {
+            width: 23%;
+        }
+    }
+}
+
 .link {
     &--portal {
         width: 12.9%;
