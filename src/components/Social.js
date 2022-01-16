@@ -23,7 +23,7 @@ export default function Social() {
                         </a>
                     </li>
                     <li className="social__item">
-                        <a href="/" className="social__link" target="_blank" rel="noreferrer">
+                        <a href="https://instagram.com/weenie_land_official?r=nametag" className="social__link" target="_blank" rel="noreferrer">
                             <Instagram className="social__icon" />
                         </a>
                     </li>
