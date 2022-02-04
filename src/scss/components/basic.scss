@@ -72,12 +72,13 @@ body {
 
     &__chests {
         display: flex;
-        width: 80%;
+        width: 90%;
         position: absolute;
     }
 
     &__chest {
         width: 20%;
+        position: relative;
         transition: transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
     }
 
@@ -91,6 +92,7 @@ body {
 
     &__chest-button {
         width: 100%;
+        padding: 0;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -103,12 +105,16 @@ body {
         padding-top: 100%;
     }
 
-    &__chest-button {
+    &__chest-button--closed {
         background-image: url(../../images/chest-closed.png);
     }
 
-    &__chest--opened &__chest-button {
+    &__chest-button--opened {
         background-image: url(../../images/chest-opened.png);
+    }
+
+    &__chest--closed &__chest-button--opened, &__chest--animation &__chest-button--opened, &__chest--opened &__chest-button--closed {
+        display: none;
     }
 
     &__chest--animation {
@@ -123,6 +129,37 @@ body {
         animation-name: opened;
         animation-duration: 0.5s;
         animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+    }
+
+    &__chest-action {
+        display: none;
+        padding: 0;
+        position: absolute;
+        transition: transform 0.2s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+
+    &__chest-action:hover {
+        transform: scale(1.2);
+    }
+
+    &__chest-action-icon {
+        width: 100%;
+    }
+
+    &__chest-action--bnb {
+        width: 12%;
+        top: 36%;
+        left: 24%;
+    }
+
+    &__chest-action--weland {
+        top: 37.2%;
+        width: 12%;
+        right: 46%;
+    }
+
+    &__chest--opened &__chest-action {
+        display: flex;
     }
 }
 
