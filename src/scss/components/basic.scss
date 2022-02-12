@@ -78,7 +78,6 @@ body {
 
     &__chest {
         width: 20%;
-        position: relative;
         transition: transform 0.2s cubic-bezier(0.19, 1, 0.22, 1);
     }
 
@@ -86,8 +85,12 @@ body {
         margin-left: 30px;
     }
 
-    &__chest:not(&__chest--opened):hover {
+    &__chest:not(&__chest.opened):hover {
         transform: scale(1.05);
+    }
+
+    &__chest-wrapper {
+        position: relative;
     }
 
     &__chest-button {
@@ -113,22 +116,46 @@ body {
         background-image: url(../../images/chest-opened.png);
     }
 
-    &__chest--closed &__chest-button--opened, &__chest--animation &__chest-button--opened, &__chest--opened &__chest-button--closed {
+    &__chest.closed &__chest-button--opened, &__chest.animation &__chest-button--opened, &__chest.opened &__chest-button--closed {
         display: none;
     }
 
-    &__chest--animation {
+    &__chest.animation {
         animation-name: opening;
         animation-duration: 0.1s;
         animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
         animation-iteration-count: infinite;
     }
 
-    &__chest--opened {
-        transform: scale(1.2);
+    &__chest.opened {
         animation-name: opened;
         animation-duration: 0.5s;
         animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+    }
+
+    &__chest.fullscreen {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 100%;
+
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 99;
+
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+    }
+
+    &__chest.fullscreen:nth-child(n) {
+        margin: 0;
+    }
+
+    &__chest.fullscreen &__chest-wrapper {
+        width: 27%;
     }
 
     &__chest-action {
@@ -158,7 +185,7 @@ body {
         right: 46%;
     }
 
-    &__chest--opened &__chest-action {
+    &__chest.opened &__chest-action {
         display: flex;
     }
 }
@@ -180,11 +207,13 @@ body {
 @keyframes opened {
     0% {
         transform: scale(1.5);
+        background: rgba(255, 255, 255, 1);
     }
 
 
     100% {
-        transform: scale(1.2);
+        transform: scale(1);
+        background: rgba(0, 0, 0, 0.5);
     }
 }
 
