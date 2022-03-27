@@ -19,7 +19,7 @@ let provider = new ethers.providers.JsonRpcProvider(
 let nftAddress = "0xa623E4Cd785455Be0D55aAc093f3A0F61f1EeaBE";
 let tokenAddress = "0x0b28c2cC23AF5600588f106e6f87f80962B8E039";
 
-let nftInstance = new ethers.Contract(nftAddress, NftAbi, provider);
+// let nftInstance = new ethers.Contract(nftAddress, NftAbi, provider);
 let tokenInstance = new ethers.Contract(tokenAddress, tokenAbi, provider);
 
 export const getTokenAllowance = async (userAddress) => {
